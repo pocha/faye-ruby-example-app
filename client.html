@@ -1,0 +1,20 @@
+<script type="text/javascript" 
+        src="http://localhost:9292/faye/client.js">
+	</script>
+
+<script type="text/javascript">
+	var client = new Faye.Client('http://localhost:9292/faye');
+	var subscription = client.subscribe('/server', function(message) {
+		alert(message.text)
+		client.publish('/browser', {text: 'Hi from browser'});
+	});
+var publication = client.publish('/browser', {text: 'Hi from browser'});
+
+publication.callback(function() {
+		alert('Message received by server!');
+		});
+
+publication.errback(function(error) {
+		alert('There was a problem: ' + error.message);
+		});
+</script>
