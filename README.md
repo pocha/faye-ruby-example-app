@@ -19,4 +19,11 @@ New to Faye & do not know how to use it in Ruby ? This is a good place to start.
 
 The client will send a message & eventmachine.rb will respond to it. Both of the parties are suppose to respond instantly to the incoming message.
 
+### Browser showing message from server
+![Client showing message from server](https://dl.dropboxusercontent.com/u/76443013/Faye-browser.png)
+
+### Server showing message from browser
+![Server showing message from browser](https://dl.dropboxusercontent.com/u/76443013/Faye-eventmachine.png)
+
+
 Now that you have seen Faye in action, go build your own realtime messaging app in Ruby/Rails using Faye. 
