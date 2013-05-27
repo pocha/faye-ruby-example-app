@@ -1,7 +1,7 @@
-** Example Faye app purely in Ruby **
+# Example Faye app purely in Ruby 
 New to Faye & do not know how to use it in Ruby ? This is a good place to start.
 
-* Installation *
+## Installation 
 
 1. Install dependencies - `gem install faye, evementmachine, thin`
 
