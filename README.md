@@ -5,15 +5,21 @@ New to Faye & do not know how to use it in Ruby ? This is a good place to start.
 
 1. Install dependencies 
  
-    gem install faye, evementmachine, thin
+    
+	gem install faye, evementmachine, thin
+
 
 2. Fire up Faye server 
 
-    rackup faye.ru -s thin -E production
+    
+	rackup faye.ru -s thin -E production
+
 
 3. Fire eventmachine client which will respond to the browser request
 
-    ruby eventmachine.rb
+    
+	ruby eventmachine.rb
+
 
 4. Open client.html in browser (since you do not have a webserver running, you can simply open up the file in browser to execute javascript)
 
