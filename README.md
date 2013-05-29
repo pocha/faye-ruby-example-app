@@ -1,4 +1,8 @@
 # Example Faye app purely in Ruby 
+[Faye](http://faye.jcoglan.com) is a pub/sub messaging server (plus client) for web. If you need realtime information processing & dessimination capabilities in your web app (something like a chat application), Faye is what you can use. 
+
+![Faye Screnshot](https://dl.dropboxusercontent.com/u/76443013/Faye.png)
+
 New to Faye & do not know how to use it in Ruby ? This is a good place to start.
 
 ## Installation 
