@@ -8,10 +8,10 @@
 
 	var subscription = client.subscribe('/server', function(message) {
 		alert(message.text)
-		client.publish('/browser', {text: 'Hi from browser - 1'});
+		client.publish('/browser', {text: 'Hi from browser - 2'});
 	});
 
-	var publication = client.publish('/browser', {text: 'Hi from browser - 1'});
+	var publication = client.publish('/browser', {text: 'Hi from browser - 2'});
 
 	publication.callback(function() {
 		alert('Message received by server!');
@@ -20,5 +20,5 @@
 	publication.errback(function(error) {
 		alert('There was a problem: ' + error.message);
 	});
-
+	
 </script>
