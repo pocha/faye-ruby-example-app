@@ -10,7 +10,7 @@ New to Faye & do not know how to use it in Ruby ? This is a good place to start.
 Install dependencies 
  
     
-	gem install faye evementmachine thin
+	gem install faye eventmachine thin
 
 
 Fire up Faye server 
