@@ -4,14 +4,14 @@
 
 <script type="text/javascript">
 
-	var client = new Faye.Client('http://localhost:9292/faye');
+	var client2 = new Faye.Client('http://localhost:9292/faye');
 
-	var subscription = client.subscribe('/server', function(message) {
+	var subscription = client2.subscribe('/server', function(message) {
 		alert(message.text)
-		client.publish('/browser', {text: 'Hi from browser - 1'});
+		client2.publish('/browser', {text: 'Hi from browser - 2'});
 	});
 
-	var publication = client.publish('/browser', {text: 'Hi from browser - 1'});
+	var publication = client2.publish('/browser', {text: 'Hi from browser - 2'});
 
 	publication.callback(function() {
 		alert('Message received by server!');
